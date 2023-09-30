@@ -18,9 +18,9 @@
                 <div class="container d-flex align-items-center justify-content-between h-100">
                     <h1 id="logo" class="mb-0 h-100 py-1 col-lg-3"><a href="/"><img class="h-100" src="images/kcaar-logo.svg" alt="한국접근성평가연구원"></a></h1>
                     <div class="navi ms-auto" id="navbarText">
-                        <div class="container d-lg-flex flex-lg-row-reverse align-items-center justify-content-between">
-                            <div class="utils py-3 py-lg-0 navbar-nav">
-                                <div class="btn btn-primary-blue w-100 d-block nav-item text-white fw-bold ms-lg-1 ms-xl-2"><a href="#">로그인/회원가입</a></div>
+                        <div class="container d-lg-flex flex-lg-row-reverse align-items-center justify-content-between h-100">
+                            <div class="utils py-4 py-lg-0">
+                                <div class="btn btn-primary-blue w-100 d-block text-white fw-bold ms-lg-1 ms-xl-2"><a href="#">로그인/회원가입</a></div>
                                 <!-- not logged in -->
                                 <!-- <div class="user-welcome bg-blue-light bg-lg-none w-100 p-3 p-lg-0 rounded d-lg-flex">
                                     <div class="info mb-3 pb-3 mb-lg-0 pb-lg-0 border-bottom border-lg-bottom-0 d-flex align-items-end align-items-lg-center">
@@ -34,16 +34,54 @@
                                 </div> -->
                                 <!-- Logged In --> 
                             </div>
-                            <ul class="navbar-nav mr-auto fw-bold fs-5">
-                                <li class="nav-item px-lg-1 px-xl-2"><a class="nav-link" href="#">연구원 소개</a></li>
-                                <li class="nav-item px-lg-1 px-xl-2"><a class="nav-link" href="#">접근성시험평가</a></li>
-                                <li class="nav-item px-lg-1 px-xl-2"><a class="nav-link" href="#">자료실</a></li>
-                                <li class="nav-item px-lg-1 px-xl-2"><a class="nav-link" href="#">문의하기</a></li>
-                            </ul>
+                            <div class="navigation h-100 border-top border-md-0">
+                                <ul class="navbar-nav mr-auto fw-bold fs-5 h-100">
+                                    <li class="nav-item px-lg-1 px-xl-2 active">
+                                        <div class="nav-hd fw-normal"><button class="nav-link p-2 px-lg-1 px-xl-2 d-block w-100 text-start">연구원 소개</button></div>
+                                        <ul class="sub-nav ps-1 ps-lg-0 pt-lg-2 fw-normal">
+                                            <li class="sub-nav-link mx-lg-2"><a href="#" class="d-block p-2 w-100">sub item1</a></li>
+                                            <li class="sub-nav-link mx-lg-2"><a href="#" class="d-block p-2 w-100">sub item2</a></li>
+                                            <li class="sub-nav-link mx-lg-2"><a href="#" class="d-block p-2 w-100">sub item3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item px-lg-1 px-xl-2">
+                                        <div class="nav-hd fw-normal"><button class="nav-link p-2 px-lg-1 px-xl-2 d-block w-100 text-start">접근성시험평가</button></div>
+                                        <ul class="sub-nav ps-1 ps-lg-0 pt-lg-2 fw-normal">
+                                            <li class="sub-nav-link mx-lg-2"><a href="#" class="d-block p-2 w-100">sub item4</a></li>
+                                            <li class="sub-nav-link mx-lg-2"><a href="#" class="d-block p-2 w-100">sub item5</a></li>
+                                            <li class="sub-nav-link mx-lg-2"><a href="#" class="d-block p-2 w-100">sub item6</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item px-lg-1 px-xl-2">
+                                        <div class="nav-hd fw-normal"><button class="nav-link p-2 px-lg-1 px-xl-2 d-block w-100 text-start">접근성협의체</button></div>
+                                        <ul class="sub-nav ps-1 ps-lg-0 pt-lg-2 fw-normal">
+                                            <li class="sub-nav-link mx-lg-2"><a href="#" class="d-block p-2 w-100">sub item7</a></li>
+                                            <li class="sub-nav-link mx-lg-2"><a href="#" class="d-block p-2 w-100">sub item8</a></li>
+                                            <li class="sub-nav-link mx-lg-2"><a href="#" class="d-block p-2 w-100">sub item9</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item px-lg-1 px-xl-2">
+                                        <div class="nav-hd fw-normal"><button class="nav-link p-2 px-lg-1 px-xl-2 d-block w-100 text-start">자료실</button></div>
+                                        <ul class="sub-nav ps-1 ps-lg-0 pt-lg-2 fw-normal">
+                                            <li class="sub-nav-link mx-lg-2"><a href="#" class="d-block p-2 w-100">sub item7</a></li>
+                                            <li class="sub-nav-link mx-lg-2"><a href="#" class="d-block p-2 w-100">sub item8</a></li>
+                                            <li class="sub-nav-link mx-lg-2"><a href="#" class="d-block p-2 w-100">sub item9</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item px-lg-1 px-xl-2">
+                                        <div class="nav-hd fw-normal"><button class="nav-link p-2 px-lg-1 px-xl-2 d-block w-100 text-start">문의하기</button></div>
+                                        <ul class="sub-nav ps-1 ps-lg-0 pt-lg-2 fw-normal">
+                                            <li class="sub-nav-link"><a href="#" class="d-block p-2 w-100">sub item10</a></li>
+                                            <li class="sub-nav-link"><a href="#" class="d-block p-2 w-100">sub item11</a></li>
+                                            <li class="sub-nav-link"><a href="#" class="d-block p-2 w-100">sub item12</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="btn-nav-opn d-lg-none">
-                        <button class="navbar-toggler border-0 p-1">
+                        <button class="navbar-toggler border-0 px-1 py-2">
                             <span>메뉴열기/닫기</span>
                         </button>
                     </div>
@@ -52,9 +90,20 @@
             <script>
                 const $btnOpn = document.querySelector(".navbar-toggler");
                 const $header = document.querySelector("header");
+                const $navItem = document.querySelectorAll(".nav-item");
+
                 $btnOpn.addEventListener("click", () => {
                     $header.classList.toggle("opn");
                 });
+
+                for (const item of $navItem) {
+                    item.addEventListener("click", () => {
+                        for (const i of $navItem) {
+                            i.classList.remove("active");
+                        }
+                        item.classList.add("active");
+                    });
+                }
             </script>
         </header>
         {% block content %} 

@@ -3,6 +3,32 @@ header{
 }
 
 header .navi{position: fixed; top: 60px; left: 100%; width: 100%; height: calc(100% - 60px); background-color: #fff; transition:  left 0.2s;}
+header .navi .container .navigation{position: relative;}
+header .navi .container .navigation .navbar-nav{width: 50%; background-color: #eff4fe;}
+header .navi .container .navigation .navbar-nav .nav-item{}
+header .navi .container .navigation .navbar-nav .nav-item .sub-nav{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: none;
+}
+header .navi .container .navigation .navbar-nav .nav-item.active .nav-hd{
+    background-color: #fff;
+    position: relative;
+}
+header .navi .container .navigation .navbar-nav .nav-item.active .nav-hd button::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background-color: #007aff;
+}
+header .navi .container .navigation .navbar-nav .nav-item.active .sub-nav{
+    display: block;
+}
 header .btn-nav-opn{width: 35px; height: 35px;}
 header .btn-nav-opn .navbar-toggler{width: 100%; height: 100%; font-size: 0; position: relative;}
 header .btn-nav-opn .navbar-toggler::before{
@@ -89,9 +115,44 @@ section.main-visual .slider-navigation div{ background-color: #ffffff55; width: 
         background: none;
         text-shadow: 3px 3px 3px rgba(0,0,0,0.2);
     }
- }
+
+    
+}
 @media (min-width: 992px) {
     header .navi{position: static; top: unset; left: unset; width: 100%; height: 100%; background-color: unset; transition: unset;}
+    header .navi .container .navigation .navbar-nav{width: 100%; background-color: #fff;}
+    header .navi .container .navigation .navbar-nav .nav-item{position: relative;}
+    header .navi .container .navigation .navbar-nav .nav-item .nav-hd{position: relative;}
+    header .navi .container .navigation .navbar-nav .nav-item .nav-hd::after{
+        content: '';
+        position: absolute;
+        top: unset;
+        bottom: -4px;
+        width: 100%;
+        height: 2px;
+        background-color: #007aff;
+        display: none;
+    }
+    header .navi .container .navigation .navbar-nav .nav-item:hover .nav-hd::after{
+        display: block;
+    }
+    header .navi .container .navigation .navbar-nav .nav-item.active .nav-hd button::after{
+        content: none;
+    }
+    header .navi .container .navigation .navbar-nav .nav-item .sub-nav{
+        width: max-content;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    header .navi .container .navigation .navbar-nav .nav-item.active .sub-nav{
+        display: none;
+    }
+
+    header .navi .container .navigation .navbar-nav .nav-item:hover .sub-nav,
+    header .navi .container .navigation .navbar-nav .nav-item.active:hover .sub-nav{
+        display: flex;
+    }
 }
 @media (min-width: 1200px) { }
 @media (min-width: 1400px) { }
