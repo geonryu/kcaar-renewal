@@ -1,86 +1,111 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <main class="">
-        <div class="row align-items-start">
-            <!-- <aside class="lnb container sticky-top bg-white">
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<main id="main">
+    <!-- <aside class="lnb container sticky-top bg-white">
                 <ul class="p-0 d-flex mb-0">
-                    <li class="me-3 me-lg-0"><a href="#" class="d-flex py-3 focus">인사의 글</a></li>
                     <li class="me-3 me-lg-0"><a href="#" class="d-flex py-3">조직도</a></li>
                     <li class="me-3 me-lg-0"><a href="#" class="d-flex py-3">찾아오시는 길</a></li>
                 </ul>
             </aside> -->
-            <aside class="lnb sticky-top">
-                <div class="container">
-                    <ul class="p-0 d-flex mb-0 my-5 border bg-white rounded-pill overflow-hidden">
-                        <li class="col-4 text-black"><a href="/intro" class="d-flex py-2 py-lg-3 justify-content-center">인사의 글</a></li>
-                        <li class="col-4 text-black"><a href="/org" class="d-flex py-2 py-lg-3 justify-content-center focus">조직도</a></li>
-                        <li class="col-4 text-black"><a href="/intro" class="d-flex py-2 py-lg-3 justify-content-center">찾아오시는 길</a></li>
-                    </ul>
-                </div>
-            </aside>
-            <!-- <div class="col-lg-10"> -->
-                <section class="py-5">
-                    <div class="container">
-                        <h3 class="fw-bold mb-5"><span class="fs-6 d-block text-primary mb-3">Organization Chart</span>조직도</h3>
-                        <table class="table">
-                            <tbody>
-                                <tr>
-                                    <th scope="row"><div class="rounded fs-6 fw-bold d-inline-block py-1 px-3 bg-blue-light text-primary">이사</div></th>
-                                    <td class="fw-bold text-blue-dark">이성일</td>
-                                    <td>
-                                        <ul>
-                                            <li>성균관대 시스템경영공학부 교수</li>
-                                            <li>국가기술표준원 전문위원</li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><div class="rounded fs-6 fw-bold d-inline-block py-1 px-3 bg-blue-light text-primary">이사</div></th>
-                                    <td class="fw-bold text-blue-dark">이성일</td>
-                                    <td>
-                                        <ul>
-                                            <li>성균관대 시스템경영공학부 교수</li>
-                                            <li>국가기술표준원 전문위원</li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><div class="rounded fs-6 fw-bold d-inline-block py-1 px-3 bg-blue-light text-primary">이사</div></th>
-                                    <td class="fw-bold text-blue-dark">이성일</td>
-                                    <td>
-                                        <ul>
-                                            <li>성균관대 시스템경영공학부 교수</li>
-                                            <li>국가기술표준원 전문위원</li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><div class="rounded fs-6 fw-bold d-inline-block py-1 px-3 bg-blue-light text-primary">이사</div></th>
-                                    <td class="fw-bold text-blue-dark">이성일</td>
-                                    <td>
-                                        <ul>
-                                            <li>성균관대 시스템경영공학부 교수</li>
-                                            <li>국가기술표준원 전문위원</li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><div class="rounded fs-6 fw-bold d-inline-block py-1 px-3 bg-blue-light text-primary">이사</div></th>
-                                    <td class="fw-bold text-blue-dark">이성일</td>
-                                    <td>
-                                        <ul>
-                                            <li>성균관대 시스템경영공학부 교수</li>
-                                            <li>국가기술표준원 전문위원</li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-            <!-- </div> -->
+    <aside class="lnb ">
+        <div class="container">
+            <ul class="p-0 d-flex mb-0 my-5 border bg-white rounded-pill overflow-hidden">
+                <li class="col-4 fs-6 fs-lg-0 text-black"><a href="/intro" class="d-flex py-2 justify-content-center">이사장 인사말</a></li>
+                <li class="col-4 fs-6 fs-lg-0 text-black"><a href="/org" class="d-flex py-2 justify-content-center focus">조직도</a></li>
+                <li class="col-4 fs-6 fs-lg-0 text-black"><a href="/center" class="d-flex py-2 justify-content-center">오시는 길</a></li>
+            </ul>
         </div>
-    </main>
+    </aside>
+    <!-- <div class="col-lg-10"> -->
+    <section class="py-5 col-lg-8 mx-auto">
+        <div class="container">
+            <h3 class="fw-bold mb-5 text-center"><span class="fs-6 d-block text-primary mb-1 fw-bold">Organization Chart</span>조직도</h3>
+            <div class="tb-org border-top">
+                <div class="border-bottom px-2 px-md-3 py-2 d-flex align-items-start">
+                    <div class="rounded fs-6 fw-bold d-inline-block py-1 px-2 px-md-3 mt-2 bg-blue-light text-primary mt-1">이사</div>
+                    <div class="fw-bold text-blue-dark mt-2 col-3 col-lg-2 text-center">이성일</div>
+                    <div class="col-7 col-lg-8">
+                        <ul class="p-0">
+                            <li class="py-2">- 성균관대 시스템경영공학부 교수</li>
+                            <li class="py-2">- 국가기술표준원 전문위원</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-bottom px-2 px-md-3 py-2 d-flex align-items-start">
+                    <div class="rounded fs-6 fw-bold d-inline-block py-1 px-2 px-md-3 mt-2 bg-blue-light text-primary mt-1">이사</div>
+                    <div class="fw-bold text-blue-dark mt-2 col-3 col-lg-2 text-center">손병창</div>
+                    <div class="col-7 col-lg-8">
+                        <ul class="p-0">
+                            <li class="py-2">- 나사렛대 재활의료공학과 교수</li>
+                            <li class="py-2">- 한국전자정보 통신사업진흥회 가전 접근성 표준기술위원</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-bottom px-2 px-md-3 py-2 d-flex align-items-start">
+                    <div class="rounded fs-6 fw-bold d-inline-block py-1 px-2 px-md-3 mt-2 bg-blue-light text-primary mt-1">이사</div>
+                    <div class="fw-bold text-blue-dark mt-2 col-3 col-lg-2 text-center">이인석</div>
+                    <div class="col-7 col-lg-8">
+                        <ul class="p-0">
+                            <li class="py-2">- 한경대 산업시스템공학과 교수</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-bottom px-2 px-md-3 py-2 d-flex align-items-start">
+                    <div class="rounded fs-6 fw-bold d-inline-block py-1 px-2 px-md-3 mt-2 bg-blue-light text-primary mt-1">이사</div>
+                    <div class="fw-bold text-blue-dark mt-2 col-3 col-lg-2 text-center">이진복</div>
+                    <div class="col-7 col-lg-8">
+                        <ul class="p-0">
+                            <li class="py-2">- 한서대 의료복지공학과 교수</li>
+                            <li class="py-2">- 한국전자정보 통신사업진흥회 가전 접근성 표준기술위원</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-bottom px-2 px-md-3 py-2 d-flex align-items-start">
+                    <div class="rounded fs-6 fw-bold d-inline-block py-1 px-2 px-md-3 mt-2 bg-blue-light text-primary mt-1">이사</div>
+                    <div class="fw-bold text-blue-dark mt-2 col-3 col-lg-2 text-center">박재현</div>
+                    <div class="col-7 col-lg-8">
+                        <ul class="p-0">
+                            <li class="py-2">- 인천대 산업경영공학과 교수</li>
+                            <li class="py-2">- 서울경기질병판정위원회 위원</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-bottom px-2 px-md-3 py-2 d-flex align-items-start">
+                    <div class="rounded fs-6 fw-bold d-inline-block py-1 px-2 px-md-3 mt-2 bg-blue-light text-primary mt-1">이사</div>
+                    <div class="fw-bold text-blue-dark mt-2 col-3 col-lg-2 text-center">김현경</div>
+                    <div class="col-7 col-lg-8">
+                        <ul class="p-0">
+                            <li class="py-2">- 광운대 정보융합부 교수</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-bottom px-2 px-md-3 py-2 d-flex align-items-start">
+                    <div class="rounded fs-6 fw-bold d-inline-block py-1 px-2 px-md-3 mt-2 bg-blue-light text-primary mt-1">이사</div>
+                    <div class="fw-bold text-blue-dark mt-2 col-3 col-lg-2 text-center">김상화</div>
+                    <div class="col-7 col-lg-8">
+                        <ul class="p-0">
+                            <li class="py-2">- 한국ICT접근성연구센터 이사</li>
+                            <li class="py-2">- 싸인커뮤니케이션연구소 대표</li>
+                            <li class="py-2">- 한국농아사회정보원 회장</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-bottom px-2 px-md-3 py-2 d-flex align-items-start">
+                    <div class="rounded fs-6 fw-bold d-inline-block py-1 px-2 px-md-3 mt-2 bg-blue-light text-primary mt-1">이사</div>
+                    <div class="fw-bold text-blue-dark mt-2 col-3 col-lg-2 text-center">김대성</div>
+                    <div class="col-7 col-lg-8">
+                        <ul class="p-0">
+                            <li class="py-2">- 한국전자정보 통신산업진흥회 전문위원</li>
+                            <li class="py-2">- KEA 가전접근성 표준기술위원회 간사</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- </div> -->
+    </div>
+</main>
 {% endblock %}

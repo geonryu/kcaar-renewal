@@ -1,0 +1,18 @@
+section.contact .col:hover > div{
+    background-color: #007aff !important;
+}
+section.contact .col:hover > div .tit{color: #fff !important;}
+section.contact .col:hover > div .tit span{color: #fff !important;}
+section.contact .col:hover > div p{color: #fff !important;}
+section.contact .col:hover > div .btn-more a{border-color: #fff !important; color: #fff !important;}
+section.contact .col > div .btn-more a:hover{background-color: #fff; color: #007aff !important;}
+section.contact .col:hover > div{}
+@media (min-width: 576px) {
+    
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) { }
+@media (min-width: 1400px) { }

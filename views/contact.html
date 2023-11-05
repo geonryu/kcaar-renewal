@@ -1,0 +1,57 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <main id="main">
+        <div class="">
+            <!-- <aside class="lnb container sticky-top bg-white">
+                <ul class="p-0 d-flex mb-0">
+                    <li class="me-3 me-lg-0"><a href="#" class="d-flex py-3 focus">인사의 글</a></li>
+                    <li class="me-3 me-lg-0"><a href="#" class="d-flex py-3">조직도</a></li>
+                    <li class="me-3 me-lg-0"><a href="#" class="d-flex py-3">찾아오시는 길</a></li>
+                </ul>
+            </aside> -->
+            <aside class="lnb ">
+                <div class="container">
+                    <ul class="p-0 d-flex mb-0 my-5 border bg-white rounded-pill overflow-hidden">
+                        <!-- <li class="col-4 fs-6 fs-lg-0 text-black"><a href="/intro" class="d-flex py-2 justify-content-center">자주찾는질문</a></li> -->
+                        <li class="col-6 fs-6 fs-lg-0 text-black"><a href="/org" class="d-flex py-2 justify-content-center focus">시험평가 의뢰</a></li>
+                        <li class="col-6 fs-6 fs-lg-0 text-black"><a href="/intro" class="d-flex py-2 justify-content-center">1:1 문의</a></li>
+                    </ul>
+                </div>
+            </aside>
+            <!-- <div class="col-lg-10"> -->
+                <section class="py-5">
+                    <div class="container">
+                        <h3 class="fw-bold mb-5 text-center"><span class="fs-6 d-block text-primary mb-1 fw-bold">Request for Evaluation</span>시험평가 의뢰</h3>
+                        <div class="col-md-10 mx-auto">
+                            <form action="">
+                                <h5 class="fs-6 fw-bold text-primary-blue">접근성 평가 유형</h5>
+                                <div class="rounded-pill d-block col-3">
+                                    <div class="select-type d-flex w-100 rounded-pill border">
+                                        <input type="radio" name="type" id="typeApp" checked>
+                                        <label for="typeApp" class="sel1 py-1 w-50 text-center rounded-pill">가전</label>
+                                        <input type="radio" name="type" id="typeKiosk">
+                                        <label for="typeKiosk" class="sel2 py-1 w-50 text-center rounded-pill">키오스크</label>
+                                    </div>
+                                </div>
+                                <div class="user-corp mb-3">
+                                    <div class="mb-1 text-primary-blue fw-bold fs-6">기관/업체명</div>
+                                    <input class="px-3 py-2 bg-white border border-primary d-block rounded w-100" type="text" id="userCorp" placeholder="아이디(이메일)을 입력" required>
+                                </div>
+                                <div class="user-corp mb-3">
+                                    <div class="mb-1 text-primary-blue fw-bold fs-6">담당자명</div>
+                                    <input class="px-3 py-2 bg-white border border-primary d-block rounded w-100" type="text" id="userName" placeholder="아이디(이메일)을 입력" required>
+                                </div>
+                                <div class="user-corp mb-3">
+                                    <div class="mb-1 text-primary-blue fw-bold fs-6">담당자명</div>
+                                    <input class="px-3 py-2 bg-white border border-primary d-block rounded w-100" type="text" id="userName" placeholder="아이디(이메일)을 입력" required>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            <!-- </div> -->
+        </div>
+    </main>
+{% endblock %}

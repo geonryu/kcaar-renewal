@@ -2,7 +2,7 @@
 
 {% block content %}
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <main class="">
+    <main id="main">
         <!-- <aside class="lnb container sticky-top bg-white">
             <ul class="p-0 d-flex mb-0">
                 <li class="me-3 me-lg-0"><a href="#" class="d-flex py-3 focus">인사의 글</a></li>
@@ -10,24 +10,24 @@
                 <li class="me-3 me-lg-0"><a href="#" class="d-flex py-3">찾아오시는 길</a></li>
             </ul>
         </aside> -->
-        <aside class="lnb sticky-top">
+        <aside class="lnb">
             <div class="container">
                 <ul class="p-0 d-flex mb-0 my-5 border bg-white rounded-pill overflow-hidden">
-                    <li class="col-4 text-black"><a href="/intro" class="d-flex py-2 py-lg-3 justify-content-center focus">인사의 글</a></li>
-                    <li class="col-4 text-black"><a href="/org" class="d-flex py-2 py-lg-3 justify-content-center">조직도</a></li>
-                    <li class="col-4 text-black"><a href="/intro" class="d-flex py-2 py-lg-3 justify-content-center">찾아오시는 길</a></li>
+                    <li class="col-4 fs-6 fs-lg-0 text-black"><a href="/intro" class="d-flex py-2 justify-content-center focus">이사장 인사말</a></li>
+                    <li class="col-4 fs-6 fs-lg-0 text-black"><a href="/org" class="d-flex py-2 justify-content-center">조직도</a></li>
+                    <li class="col-4 fs-6 fs-lg-0 text-black"><a href="/center" class="d-flex py-2 justify-content-center">오시는 길</a></li>
                 </ul>
             </div>
         </aside>
         <section class="py-5">
             <div class="container">
-                <h3 class="fw-bold mb-5"><span class="fs-6 d-block text-primary mb-3">Greetings</span>인사의 글</h3>
+                <h3 class="fw-bold mb-5"><span class="fs-6 d-block text-primary mb-1 fw-bold">Greetings</span>인사의 글</h3>
                 <div class="row">
-                    <div class="info col-12 col-lg-4 mb-4 mb-lg-0 d-flex flex-column justify-content-between">
+                    <div class="info col-12 col-lg-4 mb-4 mb-lg-0 d-flex flex-column">
                         <div class="image rounded overflow-hidden mb-3"><img src="../images/main-bn-img1.jpg" alt=""></div>
                         <div class="row">
-                            <div class="col-6 col-lg-12 btn-policy mb-3"><a href="#" class="d-flex align-items-center justify-content-center btn rounded border-primary text-primary fw-bold text-center">법인 정관 전체보기<span class="material-symbols-outlined">link</span></a></div>
-                            <div class="col-6 col-lg-12 btn-policy mb-3"><a href="#" class="d-flex align-items-center justify-content-center btn rounded border-primary text-primary fw-bold text-center">사업자등록증 보기<span class="material-symbols-outlined">link</span></a></div>
+                            <div class="col-6 col-lg-12 btn-policy mb-3"><a href="#" class="d-flex align-items-center justify-content-center btn rounded border-primary text-primary fw-bold text-center">법인 정관 전체보기<span class="material-symbols-outlined d-none">link</span></a></div>
+                            <div class="col-6 col-lg-12 btn-policy mb-3"><a href="#" class="d-flex align-items-center justify-content-center btn rounded border-primary text-primary fw-bold text-center">사업자등록증 보기<span class="material-symbols-outlined d-none">link</span></a></div>
                         </div>
                     </div>
                     <div class="txt col-12 col-lg-8">
@@ -64,7 +64,7 @@
                                 </div>
                                 <div id="collapseOne" class="accordion-collapse collapse show"
                                     aria-labelledby="headingOne" data-bs-parent="#introAccordion">
-                                    <div class="accordion-body">
+                                    <div class="accordion-body py-4">
                                         사단법인 한국접근성평가연구원은 각종 전자정보통신 제품 및 서비스의 접근성을 향상시키기 위한 기술 표준과 이를 효과적으로 시험, 평가하는 연구방법론을 개발하고, 개발된 표준 및 방법론을 실제 제품 및 서비스에 적용하는 연구를 수행합니다.
                                     </div>
                                 </div>
@@ -79,7 +79,7 @@
                                 </div>
                                 <div id="collapseTwo" class="accordion-collapse collapse"
                                     aria-labelledby="headingTwo" data-bs-parent="#introAccordion">
-                                    <div class="accordion-body">
+                                    <div class="accordion-body py-4">
                                         접근성 및 사용성 분야의 전문가들이 모여서 다양한 제품과 서비스의 접근성 시험평가 결과를 공익적 차원에서 공개함으로써 우리 사회의 전반적인 접근성 향상을 도모하고, 궁극적으로는 우리나라의 장애인과 고령자의 삶의 질 향상에 기여함을 목적으로 합니다.
                                     </div>
                                 </div>
@@ -94,7 +94,7 @@
                                 </div>
                                 <div id="collapseThree" class="accordion-collapse collapse"
                                     aria-labelledby="headingThree" data-bs-parent="#introAccordion">
-                                    <div class="accordion-body">
+                                    <div class="accordion-body py-4">
                                         사단법인 한국접근성평가연구원은 더 많은 사람들에게 전자정보통신 관련 제품과 서비스의 접근성을 보장할 수 있는 최적의 방법을 학술적으로 연구하고 교육하기 위한 구체적인 방법을 모색합니다.
                                     </div>
                                 </div>
@@ -109,7 +109,7 @@
                                 </div>
                                 <div id="collapseFour" class="accordion-collapse collapse"
                                     aria-labelledby="headingFour" data-bs-parent="#introAccordion">
-                                    <div class="accordion-body">
+                                    <div class="accordion-body py-4">
                                         사단법인 한국접근성평가연구원은 각종 전자정보통신 제품 및 서비스의 접근성에 대해 전문적·학술적인 접근이 어려운 기업 및 단체들을 위해 심도있고 혁신적인 인사이트로 장기적인 비전과 즉각적인 피드백을 제시합니다.
                                     </div>
                                 </div>

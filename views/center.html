@@ -1,0 +1,141 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<link rel="stylesheet" href="intro.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<main id="main">
+    <!-- <aside class="lnb container sticky-top bg-white">
+                <ul class="p-0 d-flex mb-0">
+                    <li class="me-3 me-lg-0"><a href="#" class="d-flex py-3">조직도</a></li>
+                    <li class="me-3 me-lg-0"><a href="#" class="d-flex py-3">찾아오시는 길</a></li>
+                </ul>
+            </aside> -->
+    <aside class="lnb ">
+        <div class="container">
+            <ul class="p-0 d-flex mb-0 my-5 border bg-white rounded-pill overflow-hidden">
+                <li class="col-4 fs-6 fs-lg-0 text-black"><a href="/intro" class="d-flex py-2 justify-content-center">이사장
+                        인사말</a></li>
+                <li class="col-4 fs-6 fs-lg-0 text-black"><a href="/org" class="d-flex py-2 justify-content-center">조직도</a>
+                </li>
+                <li class="col-4 fs-6 fs-lg-0 text-black"><a href="/center"
+                        class="d-flex py-2 justify-content-center focus">오시는 길</a></li>
+            </ul>
+        </div>
+    </aside>
+    <!-- <div class="col-lg-10"> -->
+    <section class="py-5">
+        <div class="container">
+            <h3 class="fw-bold mb-5"><span class="fs-6 d-block text-primary mb-1 fw-bold">Direction</span>오시는 길</h3>
+            <div class="map">
+                <div id="daumRoughmapContainer1696861377921"
+                    class="root_daum_roughmap root_daum_roughmap_landing rounded overflow-hidden box-shadow"></div>
+                <script charset="UTF-8" class="daum_roughmap_loader_script"
+                    src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                <script charset="UTF-8">
+                    new daum.roughmap.Lander({
+                        "timestamp": "1696861377921",
+                        "key": "2ge5n",
+                        "mapWidth": "640",
+                        "mapHeight": "360"
+                    }).render();
+                </script>
+                <div class="utils row my-5">
+                    <div class="map-naver col-6"><a class="text-center py-3 text-center border d-block" target="_blank"
+                            href="https://map.naver.com/p/entry/place/1144476933?placePath=%2Fhome&c=15.00,0,0,0,dh">네이버지도
+                            바로가기</a></div>
+                    <div class="map-kakao col-6"><a class="text-center py-3 text-center border d-block" target="_blank"
+                            href="https://kko.to/I3eLSGCUhY">카카오지도 바로가기</a></div>
+                </div>
+                <div class="direction border-top">
+                    <div class="location py-3 d-flex border-bottom">
+                        <div class="ico px-3 fw-bold text-primary-blue"><span
+                                class="fs-1 material-symbols-outlined">pin_drop</span></div>
+                        <div class="txt">
+                            <div class="tit fw-bold text-gray-700 mb-2">서울 종로구 대학로8길 26 6층</div>
+                        </div>
+                    </div>
+                    <div class="car py-3 d-flex border-bottom">
+                        <div class="ico px-3 fw-bold text-primary-blue"><span class="fs-1 material-symbols-outlined">local_parking</span></div>
+                        <div class="txt">
+                            <div class="tit fw-bold text-gray-700 mb-2">자차 이용시</div>
+                            <div class="">준비된 주차장이 없습니다. 인근에 태원주차장 또는 동호주차장 등이 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="subway py-3 d-flex border-bottom">
+                        <div class="ico px-3 fw-bold text-primary-blue"><span
+                                class="fs-1 material-symbols-outlined">directions_subway</span></div>
+                        <div class="txt">
+                            <div class="tit fw-bold text-gray-700 mb-2">지하철 이용시 - 4호선 혜화역</div>
+                            <div class="">혜화역 2번출구 나와 도보 3분</div>
+                        </div>
+                    </div>
+                    <div class="bus py-3 d-flex border-bottom">
+                        <div class="ico px-3 fw-bold text-primary-blue"><span
+                                class="fs-1 material-symbols-outlined">train</span></div>
+                        <div class="txt w-100">
+                            <div class="tit fw-bold mb-2">버스 이용시</div>
+                            <div class="mb-2 pb-2 border-bottom">
+                                <div class="tit fw-bold text-gray-700">혜화역, 마로니에공원</div>
+                                <div class="di fs-6 text-gray-600 mb-2">혜화역.동성중고(장면총리가옥) 방면</div>
+                                <div class="">[간선] 100번, 102번, 104번, 106번 107번, 109번, 140번, 143번, 150번, 160번, 162번,
+                                    273번, 301번, 710번, N16(심야)<br>[지선] 2112번, 직행 1101번, 1102번 7101번<br>[마을] 종로07, 종로08
+                                </div>
+                            </div>
+                            <div class="mb-2 pb-2 border-bottom">
+                                <div class="tit fw-bold text-gray-700">대학로</div>
+                                <div class="di fs-6 text-gray-600 mb-2">창경궁 방면</div>
+                                <div class="">[순환] TOUR01</div>
+                            </div>
+                            <div class="mb-2">
+                                <div class="tit fw-bold text-gray-700">혜화역.서울대병원입구</div>
+                                <div class="di fs-6 text-gray-600 mb-2">방송통신대.이화장 방면</div>
+                                <div class="">[간선] 109번, 601번, 273번, N16(심야)<br>[지선] 2112번<br>[마을] 종로08, 종로07, 종로12
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact py-5">
+        <div class="container mb-5">
+            <h3 class="fw-bold mb-5"><span class="fs-6 d-block text-primary mb-1 fw-bold">Contact Us</span>문의하기</h3>
+            <div class="row align-items-stretch">
+                <div class="col col-12 col-md-4 mb-3 mb-lg-0">
+                    <div class="border rounded p-4 bg-white h-100 d-flex flex-column">
+                        <div class="tit fs-5 fw-bold mb-3"><span class="fs-6 d-block text-primary fw-bold">Call</span>전화문의</div>
+                        <p class="mb-5">고객상담 운영시간 10:00 ~ 19:00</p>
+                        <div class="txt">
+                            <div class="btn-more call1 mb-2"><a href="tel:02-747-7601" class="d-block fw-bold rounded-pill border py-2 text-center">02-747-7601</a></div>
+                            <div class="btn-more call2"><a href="tel:010-2629-2477" class="d-block fw-bold rounded-pill border py-2 text-center">010-2629-2477</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-4 mb-3 mb-lg-0">
+                    <div class="border rounded p-4 bg-white h-100 d-flex flex-column">
+                        <div class="tit fs-5 fw-bold mb-3"><span class="fs-6 d-block text-primary fw-bold">e-Mail</span>이메일문의</div>
+                        <p class="mb-5">이메일 보내기</p>
+                        <div class="txt mt-auto">
+                            <div class="btn-more">
+                                <a href="mailto:﻿kcaar@kcaa.re.kr?subject=[웹 발신 문의]" class="d-block fw-bold rounded-pill border py-2 text-center">kcaar@kcaa.re.kr</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-4">
+                    <div class="border rounded p-4 bg-white h-100 d-flex flex-column">
+                        <div class="tit fs-5 fw-bold mb-3"><span class="fs-6 d-block text-primary fw-bold">Evaluation Request</span>시험평가 문의 및 의뢰</div>
+                        <p class="mb-5">시험평가와 관련한 문의와 의뢰 바로가기</p>
+                        <div class="txt mt-auto">
+                            <div class="btn-more">
+                                <a href="#" class="d-block fw-bold rounded-pill border py-2 text-center">바로가기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
